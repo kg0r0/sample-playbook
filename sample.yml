@@ -1,0 +1,10 @@
+- name: Sample install
+  hosts: all
+  tasks:
+    - name: epel install
+      yum:
+        name: http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    - name: gdb install
+      yum:
+        name: gdb
+        state: present
